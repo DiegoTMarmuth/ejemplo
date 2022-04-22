@@ -1,12 +1,43 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hola</title>
+    <title>Tutorial js blueeweb</title>
 </head>
 <body>
-    <div>hola mundo git acordandome... hola</div>
+    <div id="app">
+        <input type="text" v-model="nuevaFruta">
+        <button @click="agregarFruta">Agregar</button>
+        <h1>{{titulito}}</h1>
+        <ul>
+            <li v-for="web in web">
+                {{web}}
+            </li>
+        </ul>
+        <ul>
+            <li v-for="fruta of frutas">{{fruta.nombre}}-{{fruta.cantidad}}
+                
+                <b v-if="fruta.cantidad<4">menor a 4</b>
+                <b v-if="fruta.cantidad>4">mayor a 4</b>
+            </li>
+
+        </ul>
+    </div>
 </body>
 </html>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+<script src="vue.js"></script>
+
+
+
+
+
+
+
+
+
+
+
